@@ -1,0 +1,57 @@
+/* ===== BARRA DE NAVEGACIÓN ===== */
+.barra-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(12px);
+  border-bottom: 3px solid var(--color-verde);
+  padding: 0.8rem 0;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+}
+
+.barra-nav .marca-logo {
+  font-family: var(--fuente-titulo);
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: var(--color-verde);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.barra-nav .marca-logo span {
+  background: var(--color-verde);
+  color: var(--color-amarillo);
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.nav-enlaces {
+  display: flex;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-enlaces a {
+  font-family: var(--fuente-cuerpo);
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--color-texto);
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition: var(--transicion);
+  letter-spacing: 0.02em;
+}
+
+.nav-enlaces a:hover {
+  background: var(--color-verde);
+  color: var(--color-blanco);
+}

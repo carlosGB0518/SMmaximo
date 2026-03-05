@@ -1,0 +1,66 @@
+/* ===== VARIABLES DE MARCA ===== */
+:root {
+  --color-verde:       #2E7D32;
+  --color-verde-claro: #66BB6A;
+  --color-amarillo:    #FDD835;
+  --color-rojo:        #E53935;
+  --color-crema:       #FFF8E1;
+  --color-oscuro:      #1A1A1A;
+  --color-gris:        #F5F5F5;
+  --color-blanco:      #FFFFFF;
+  --color-texto:       #2C2C2C;
+  --color-texto-suave: #6B6B6B;
+
+  --fuente-titulo:  'Syne', sans-serif;
+  --fuente-cuerpo:  'DM Sans', sans-serif;
+
+  --sombra-card: 0 4px 24px rgba(0,0,0,0.08);
+  --radio:       12px;
+  --transicion:  all 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--fuente-cuerpo);
+  color: var(--color-texto);
+  background: var(--color-blanco);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--fuente-titulo);
+  font-weight: 800;
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--color-gris); }
+::-webkit-scrollbar-thumb { background: var(--color-verde); border-radius: 10px; }
+
+/* ===== ANIMACIONES ===== */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-30px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes pulso {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.04); }
+}
+
+.fade-up    { animation: fadeUp 0.7s ease both; }
+.slide-in   { animation: slideIn 0.7s ease both; }
